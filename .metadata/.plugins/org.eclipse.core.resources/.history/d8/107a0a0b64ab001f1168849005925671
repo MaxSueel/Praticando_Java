@@ -1,0 +1,13 @@
+import java.security.PublicKey;
+
+public class LivroHora {
+
+	// TODO Auto-generated method stub
+
+	public int hora, min, seg ;
+
+	LivroHora=new LivroHora();
+
+	inicio.hora=12;inicio.min=45;inicio.seg=38;
+
+}

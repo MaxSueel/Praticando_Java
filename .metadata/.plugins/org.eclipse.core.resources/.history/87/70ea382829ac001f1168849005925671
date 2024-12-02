@@ -1,0 +1,16 @@
+package entities;
+
+public class ContaBancaria {
+	
+	int numero;
+	String titular;
+	double saldo;
+	int agencia;
+	
+	
+	void deposita(double valorASerDepositado) {		//Aqui criamos um comportamento "deposita"
+		this.saldo += valorASerDepositado;
+		
+	}
+	 
+}

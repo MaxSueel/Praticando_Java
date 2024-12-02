@@ -1,0 +1,33 @@
+package entities;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		
+		
+		ContaBancaria maxsueel = new ContaBancaria();
+		maxsueel.numero = 1205;									// Aqui adicionamos atributos ".atributo"
+		maxsueel.agencia = 4242;
+		maxsueel.saldo = 600;
+		maxsueel.titular =  "Max Sueel Gomes";
+		
+		maxsueel.deposita(100);
+		
+		
+		if(maxsueel.saldo >= 5000.0) {
+			maxsueel.saca(5000.0);
+		}
+		
+		ContaBancaria eduarda = new ContaBancaria();
+		eduarda.numero = 546;
+		eduarda.saldo = 1200;
+		eduarda.deposita(100);
+		
+		System.out.println(" Max saldo: " + maxsueel.saldo);
+		System.out.println(" Eduarda saldo: " + eduarda.saldo);
+		
+		
+
+	}
+
+}

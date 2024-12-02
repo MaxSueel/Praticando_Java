@@ -1,0 +1,10 @@
+package entities;
+
+public class ContaBancaria {
+	
+	int numero;
+	String titular;
+	double saldo;
+	int agencia;
+	 
+}

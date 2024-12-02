@@ -1,0 +1,9 @@
+package entities;
+
+public class Pessoa {
+	String titular;
+	String cpf;
+	String dataDeNacimento;
+	String nome;
+
+}

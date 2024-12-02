@@ -1,0 +1,52 @@
+package entities;
+
+public class Account {
+
+	private int numberNumero; // Contruindo as variaveis privadas
+	private String holderTilutar; // So podem ser acessada dentro da classe Accaunt
+	private double balanceSaldo;
+
+	public Account(int numberNumero, String holderTitular) { // Criando uma classe publica Account"Conta"
+		this.numberNumero = numberNumero; // recebendo um numero inteiro da conta e o nome do titular.
+		this.holderTilutar = holderTitular;
+
+	}
+
+	public Account(int numberNumero, String holderTitular, double initialDeposit) {
+		this.numberNumero = numberNumero; // Metodo Construtor: Ele é usado para criar um novo objeto.
+		this.holderTilutar = holderTitular;
+		deposit(initialDeposit); 
+	}
+git
+	public int getNumberNumero() { // metodo geters: esses metodos são usados para obter o valor das variaveis
+									// privadas.
+		return numberNumero; // isso permite que voce altere o nome.
+	}
+
+	public String getHolderTilutar() {
+		return holderTilutar;
+	}
+
+	public void setHolderTilutar(String holderTilutar) { // metodo setter: esse metodo é usado para modificar o valor da
+															// variavel.
+		this.holderTilutar = holderTilutar;
+	}
+
+	public double getBalanceSaldo() {
+		return balanceSaldo;
+	}
+
+	public void deposit(double amountQuantia) {
+		balanceSaldo += amountQuantia;
+	}
+
+	public void withdrawSacar(double amountQuantia) {
+		balanceSaldo -= amountQuantia +5.0;
+		
+	}
+	
+	
+	
+	
+	
+}
